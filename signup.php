@@ -14,9 +14,15 @@ if (isset($_POST['signup'])) {
   $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password');";
 
   if (mysqli_query($conn, $sql)) {
-    echo "Inserted";
+    $_SESSION['msg'] = "You have Signed Up Successfully";
+    $_SESSION['class'] = "text-bg-success";
+    header("Location: index.php");
+    exit();
   } else {
-    echo "Failed";
+    $_SESSION['msg'] = "Sign Up failed";
+    $_SESSION['class'] = "text-bg-danger";
+    header("Location: index.php");
+    exit();
   }
 }
 ?>

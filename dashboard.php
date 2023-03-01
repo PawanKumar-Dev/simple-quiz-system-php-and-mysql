@@ -50,17 +50,17 @@ if (!isset($_SESSION['login_active'])) {
 
     <div class="container">
 
-      <?php if (isset($_SESSION['errors'])) : ?>
+      <?php if (isset($_SESSION['msg'])) : ?>
         <div class="toast-container position-fixed bottom-0 end-0 p-3">
           <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="toast-header ">
+            <div class="toast-header <?php echo $_SESSION['class']; ?>">
               <strong class="me-auto">Success</strong>
               <button type="button" class="btn-close text-white" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
-            <div class="toast-body text-bg-success">
+            <div class="toast-body">
               <?php
-              $message = $_SESSION['errors'];
-              unset($_SESSION['errors']);
+              $message = $_SESSION['msg'];
+              unset($_SESSION['msg']);
               echo $message;
               ?>
             </div>
