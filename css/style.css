@@ -1,0 +1,56 @@
+/* Coded by https://beproblemsolver.com  Visit for more such code */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body {
+   font-size: 16px;
+   background-color: #f8f9fd;
+ }
+
+ .main-section {
+   padding: 0;
+ }
+
+ .box {
+   width: 100%;
+   overflow: hidden;
+   background: #fff;
+   border-radius: 5px;
+   box-shadow: 0px 10px 34px -15px rgb(0 0 0 / 24%);
+ }
+
+ .img {
+   background-image: url(../img/bg-1.webp);
+   height: 200px;
+ }
+
+ .img-2 {
+   background-image: url(../img/signup.webp);
+   height: 200px;
+ }
+
+ .form-control {
+   height: 48px;
+   background: #fff;
+   color: #000;
+   font-size: 16px;
+   border-radius: 5px;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+ }
+
+ .btn.btn-primary {
+   background: #01d28e !important;
+   border: 1px solid #01d28e !important;
+   color: #fff !important;
+ }
+
+ .btn.btn-primary-1 {
+   background: #029161 !important;
+   border: 1px solid #029161 !important;
+   color: #fff !important;
+ }
